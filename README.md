@@ -4,11 +4,18 @@
   <p align="center">
     Sistem POS lengkap untuk supermarket, toko kelontong, dan bisnis retail
     <br />
-    <a href="#fitur"><strong>Lihat Fitur »</strong></a>
-    ·
-    <a href="#instalasi"><strong>Cara Install »</strong></a>
-    ·
-    <a href="#tangki-bahan-bakar"><strong>Donasi</strong></a>
+    
+    
+    Jika aplikasi ini bermanfaat, Anda dapat mendukung saya melalui:
+    
+    <a href="https://saweria.co/overloaders" target="_blank">
+      <img src="https://img.shields.io/badge/Support%20Me-Saweria-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Saweria">
+    </a>
+    
+    **https://saweria.co/overloaders**
+    
+    Setiap dukungan sangat berarti untuk pengembangan fitur-fitur selanjutnya. Terima kasih! 🙏
+    
   </p>
 </div>
 
@@ -78,6 +85,7 @@ Aplikasi ini mencakup **40+ fitur** yang saling terintegrasi untuk mendukung ope
 | **Retur Pembelian** | Retur barang ke supplier, kurangi stok otomatis |
 | **Request Pembelian** | Staff bisa request pembelian, atasan approve/reject |
 | **Hutang (Payables)** | Tracking status lunas/partial/hutang per PO, input pembayaran |
+| **Laporan Pembayaran PO** | Rekap pembayaran PO per supplier/status dengan print & export |
 
 ### 👥 Manajemen Member
 
@@ -114,6 +122,7 @@ Aplikasi ini mencakup **40+ fitur** yang saling terintegrasi untuk mendukung ope
 | **Receiving Barang** | Rekap penerimaan barang |
 | **Stok Bergerak** | Moving stock report |
 | **Export Excel** | Download Excel untuk semua laporan |
+| **Cetak / Print** | Setiap laporan bisa dicetak atau disimpan sebagai PDF |
 
 ### ⚙️ Pengaturan Sistem
 
