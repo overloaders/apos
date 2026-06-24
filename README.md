@@ -4,7 +4,7 @@
   <p align="center">
     Sistem POS lengkap untuk supermarket, toko kelontong, dan bisnis retail
     <br />
-    
+    </p>
     
     Jika aplikasi ini bermanfaat, Anda dapat mendukung saya melalui:
     
@@ -16,7 +16,7 @@
     
     Setiap dukungan sangat berarti untuk pengembangan fitur-fitur selanjutnya. Terima kasih! 🙏
     
-  </p>
+  
 </div>
 
 ---
