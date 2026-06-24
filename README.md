@@ -1,66 +1,294 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="public/favicon.svg" alt="APOS Logo" width="80">
+  <h1 align="center">APOS - Aplikasi Point of Sale Supermarket</h1>
+  <p align="center">
+    Sistem POS lengkap untuk supermarket, toko kelontong, dan bisnis retail
+    <br />
+    <a href="#fitur"><strong>Lihat Fitur »</strong></a>
+    ·
+    <a href="#instalasi"><strong>Cara Install »</strong></a>
+    ·
+    <a href="#tangki-bahan-bakar"><strong>Donasi</strong></a>
+  </p>
+</div>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 📋 Daftar Isi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Tentang](#tentang)
+- [Fitur](#fitur)
+- [Teknologi](#teknologi)
+- [Syarat Sistem](#syarat-sistem)
+- [Instalasi](#instalasi)
+- [Cara Penggunaan](#cara-penggunaan)
+- [Lisensi](#lisensi)
+- [Dukungan](#dukungan)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📖 Tentang
 
-## Learning Laravel
+**APOS** adalah aplikasi Point of Sale (POS) berbasis web yang dirancang khusus untuk supermarket, toko kelontong, dan bisnis retail. Dibangun menggunakan Laravel 11 dan Bootstrap 4.6 dengan AdminLTE 3.2, aplikasi ini menyediakan fitur lengkap mulai dari manajemen produk, stok, penjualan, pembelian, hingga laporan keuangan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Aplikasi ini mencakup **40+ fitur** yang saling terintegrasi untuk mendukung operasional bisnis retail sehari-hari.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur
 
-## Laravel Sponsors
+### 🛒 Manajemen Penjualan (POS)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Fitur | Keterangan |
+|-------|------------|
+| **Kasir / POS** | Antarmuka kasir cepat dengan input barcode, pencarian produk, dan tampilan keranjang |
+| **Riwayat Penjualan** | Daftar transaksi lengkap dengan filter tanggal, metode bayar, dan status |
+| **Retur Penjualan** | Proses retur barang dengan pengembalian stok otomatis |
+| **Cetak Struk** | Cetak struk thermal langsung dari browser |
+| **Multi Payment** | Tunai, Kartu Debit/Kredit, Transfer Bank, E-Wallet, Gift Card |
+| **Gift Card / Voucher** | Penerbitan, top-up, dan redeem gift card di kasir |
+| **Diskon Member** | Diskon otomatis berdasarkan level membership |
+| **Tukar Poin** | Penukaran poin member sebagai diskon |
 
-### Premium Partners
+### 📦 Manajemen Produk & Stok
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+| Fitur | Keterangan |
+|-------|------------|
+| **Master Produk** | CRUD produk dengan barcode, SKU, harga beli/jual, gambar |
+| **Kategori Produk** | Pengelompokan produk per kategori |
+| **Brand / Merek** | Manajemen merek produk |
+| **Satuan Unit** | Konversi satuan produk |
+| **Supplier** | Data pemasok dengan kontak lengkap |
+| **Stok Masuk/Keluar** | Tracking stok dengan mutasi gudang |
+| **Kartu Stok** | Riwayat mutasi per SKU dengan saldo berjalan |
+| **Stok Minimal** | Peringatan stok menipis di dashboard |
+| **Stok Awal** | Pengaturan stok awal produk baru |
+| **Penyesuaian Stok** | Koreksi stok manual dengan catatan |
+| **Mutasi Stok** | Pemindahan stok antar gudang |
+| **Opname Stok** | Stock opname dengan selisih otomatis jadi beban |
+| **History Harga** | Riwayat perubahan harga beli & jual per produk |
+| **Print Barcode** | Cetak label barcode (single & multiple) |
 
-## Contributing
+### 📋 Manajemen Pembelian
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Fitur | Keterangan |
+|-------|------------|
+| **Purchase Order** | Pembuatan PO dengan status menunggu, diterima, atau dibatalkan |
+| **Receiving Barang** | Penerimaan barang dari PO, update stok otomatis |
+| **Retur Pembelian** | Retur barang ke supplier, kurangi stok otomatis |
+| **Request Pembelian** | Staff bisa request pembelian, atasan approve/reject |
+| **Hutang (Payables)** | Tracking status lunas/partial/hutang per PO, input pembayaran |
 
-## Code of Conduct
+### 👥 Manajemen Member
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Fitur | Keterangan |
+|-------|------------|
+| **Data Member** | CRUD member dengan kode, nama, level membership |
+| **Level Member** | Tingkatan member dengan disken berbeda |
+| **Poin Member** | Akumulasi poin dari transaksi, bisa ditukar |
+| **Riwayat Transaksi Member** | Tracking semua transaksi per member |
+| **Piutang Member** | Limit kredit, outstanding balance, pembayaran piutang |
+| **Diskon Spesial Member** | Harga khusus member per produk |
 
-## Security Vulnerabilities
+### 💰 Manajemen Keuangan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+| Fitur | Keterangan |
+|-------|------------|
+| **Kategori Pengeluaran** | Pengelompokan biaya operasional |
+| **Pengeluaran / Biaya** | Catat pengeluaran harian dengan approval |
+| **Target Penjualan** | Target per user dan periode dengan progress bar |
+| **Shift Kasir** | Buka/tutup shift, tracking kasir per shift |
+| **Mesin Kasir** | Multi cash register support |
 
-## License
+### 📊 Laporan & Export
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Fitur | Keterangan |
+|-------|------------|
+| **Laporan Penjualan** | Rekap penjualan harian/bulanan dengan detail |
+| **Laporan Pembelian** | Rekap pembelian per periode |
+| **Laporan Stok** | Stok masuk/keluar/sisa |
+| **Laporan Laba Rugi** | Profit & loss statement |
+| **Laba per Produk** | Margin analysis per produk dengan warna |
+| **Laporan PPN** | Pajak PPN 11% per transaksi |
+| **Retur Pembelian** | Rekap retur ke supplier |
+| **Receiving Barang** | Rekap penerimaan barang |
+| **Stok Bergerak** | Moving stock report |
+| **Export Excel** | Download Excel untuk semua laporan |
+
+### ⚙️ Pengaturan Sistem
+
+| Fitur | Keterangan |
+|-------|------------|
+| **Manajemen User** | CRUD user dengan role dan foto profil |
+| **Role & Permission** | Kontrol akses berbasis role |
+| **Profil User** | Edit profil, foto, dan password |
+| **Pengaturan Perusahaan** | Nama toko, alamat, logo, header/footer struk |
+| **Activity Logs** | Audit trail semua aktivitas user |
+| **Gift Card** | Manajemen gift card/voucher |
+
+---
+
+## 🛠️ Teknologi
+
+| Teknologi | Versi |
+|-----------|-------|
+| **Backend** | Laravel 11, PHP 8.2+ |
+| **Frontend** | Bootstrap 4.6, AdminLTE 3.2, jQuery 3 |
+| **Database** | MySQL / MariaDB |
+| **Template Engine** | Blade |
+| **JavaScript** | Vanilla JS, SweetAlert2 |
+| **Barcode** | Code128 (SVG) |
+| **Export** | PhpSpreadsheet (Excel), CSV fallback |
+| **Icons** | Font Awesome 5 / 6 |
+
+---
+
+## 💻 Syarat Sistem
+
+- PHP 8.2 atau lebih baru
+- Composer 2.x
+- MySQL 5.7+ / MariaDB 10.3+
+- Ekstensi PHP: `fileinfo`, `gd`, `mbstring`, `pdo_mysql`, `xml`, `curl`, `zip`
+- Node.js & NPM (untuk build asset)
+- Web Server: Apache / Nginx
+
+---
+
+## 🚀 Instalasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/overloaders/apos.git
+cd apos
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+npm install && npm run build
+```
+
+### 3. Konfigurasi Environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edit file `.env` dan sesuaikan:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=apos
+DB_USERNAME=root
+DB_PASSWORD=your_password
+```
+
+### 4. Migrasi Database & Seed
+
+```bash
+php artisan migrate --seed
+```
+
+Perintah di atas akan:
+- Membuat semua tabel database
+- Mengisi data awal (roles, user admin default)
+
+### 5. Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### 6. Jalankan Aplikasi
+
+```bash
+php artisan serve
+```
+
+Akses di browser: `http://localhost:8000`
+
+### 🔐 Login Default
+
+| Role | Email | Password |
+|------|-------|----------|
+| **Admin** | admin@admin.com | password |
+
+> **Penting:** Segera ganti password setelah login pertama!
+
+### 🐳 Alternatif dengan XAMPP / Laragon
+
+1. Letakkan folder project di `htdocs` (XAMPP) atau `www` (Laragon)
+2. Buat database baru bernama `apos` di phpMyAdmin
+3. Ikuti langkah 2-5 di atas
+4. Akses via `http://localhost/apos/public`
+
+---
+
+## 📖 Cara Penggunaan
+
+### Alur Bisnis Dasar
+
+1. **Setup Awal** → Atur profil perusahaan di Pengaturan → Perusahaan
+2. **Data Master** → Input kategori, satuan, brand, supplier, produk
+3. **Stok Awal** → Set stok awal produk melalui form produk
+4. **Buka Shift** → Kasir buka shift sebelum mulai bertransaksi
+5. **Transaksi POS** → Pilih/ketik produk, proses pembayaran, cetak struk
+6. **Tutup Shift** → Kasir tutup shift, setor uang
+7. **Laporan** → Cek laporan penjualan, laba, stok secara berkala
+
+### Manajemen Stok
+
+- **Kartu Stok** — Lihat riwayat lengkap per SKU (Inventori → Stok → Kartu Stok)
+- **Opname** — Lakukan opname berkala untuk mencocokkan stok fisik (Inventori → Opname)
+- **Stok Minimum** — Atur `min_stock` di produk, notifikasi muncul di dashboard
+
+### Pembelian
+
+1. Buat **Purchase Order** ke supplier
+2. Terima barang via **Receiving** (stok otomatis bertambah)
+3. Jika ada barang rusak/salah → **Retur Pembelian**
+4. Bayar invoice PO via tombol **Bayar** (tracking hutang)
+
+### Piutang Member
+
+1. Set **limit kredit** di data member
+2. Saat transaksi POS, pilih member → transaksi dicatat sebagai piutang
+3. Bayar piutang via Merchandise → Piutang Member
+4. Cek histori pembayaran per member
+
+### Gift Card
+
+1. Buat gift card via Pengaturan → Gift Card
+2. Lakukan top-up saldo
+3. Di POS, pelanggan bisa redeem gift card saat pembayaran
+
+---
+
+## 📄 Lisensi
+
+Didistribusikan di bawah **MIT License**. Lihat `LICENSE` untuk informasi lebih lanjut.
+
+---
+
+## ☕ Dukungan
+
+Jika aplikasi ini bermanfaat, Anda dapat mendukung saya melalui:
+
+<a href="https://saweria.co/overloaders" target="_blank">
+  <img src="https://img.shields.io/badge/Support%20Me-Saweria-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Saweria">
+</a>
+
+**https://saweria.co/overloaders**
+
+Setiap dukungan sangat berarti untuk pengembangan fitur-fitur selanjutnya. Terima kasih! 🙏
+
+---
+
+<div align="center">
+  Dibuat dengan ❤️ oleh <a href="https://github.com/overloaders">overloaders</a>
+</div>
