@@ -6,18 +6,23 @@
     <br />
     </p>
     
-    Jika aplikasi ini bermanfaat, Anda dapat mendukung saya melalui:
     
-    <a href="https://saweria.co/overloaders" target="_blank">
-      <img src="https://img.shields.io/badge/Support%20Me-Saweria-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Saweria">
-    </a>
-    
-    **https://saweria.co/overloaders**
-    
-    Setiap dukungan sangat berarti untuk pengembangan fitur-fitur selanjutnya. Terima kasih! 🙏
     
   
 </div>
+
+
+---
+
+Jika aplikasi ini bermanfaat, Anda dapat mendukung saya melalui:
+    
+<a href="https://saweria.co/overloaders" target="_blank">
+  <img src="https://img.shields.io/badge/Support%20Me-Saweria-FF6600?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Saweria">
+</a>
+
+**https://saweria.co/overloaders**
+
+Setiap dukungan sangat berarti untuk pengembangan fitur-fitur selanjutnya. Terima kasih! 🙏
 
 ---
 
